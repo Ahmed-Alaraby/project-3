@@ -155,9 +155,6 @@ body{
     color:white;
 }
 @media (max-width:767px) {
-    .landing .container .container-content {
-        transform: translateY(50%);
-    }
     .landing .container .container-content .text h2{
         font-size: 74px !important;
         padding-bottom: 30px;
