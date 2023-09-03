@@ -72,7 +72,8 @@ body{
         top: 100%;
         left: 0%;
         width: 100%;
-        background-color: rgb(0 0 0 / 70%);
+        background-color: rgba(0, 0, 0, 0.897);
+
     }
     .header .container i{
         padding: 15px !important;
@@ -150,15 +151,22 @@ body{
     transform: translateY(50%);
 }
 .landing .container .container-content .text{
-    flex-basis: 40%;
+    flex-basis: 50%;
     color:white;
 }
 @media (max-width:767px) {
+    .landing .container .container-content {
+        transform: translateY(100%);
+    }
     .landing .container .container-content .text h2{
-    font-size: 40px;
+        font-size: 74px !important;
+        padding-bottom: 30px;
 }
 .landing .container .container-content .text input{
     margin: 20px auto;
+}
+.landing .container .container-content .photo{
+    display: none;
 }
 }
 .landing .container .container-content .text h2{
@@ -191,7 +199,7 @@ body{
     transition: .3s;
 }
 .landing .container .container-content .photo{
-    flex-basis: 40%;
+    flex-basis:50%;
     transform: translateY(-60px);
 }
 .landing .container .container-content .photo img{
@@ -483,8 +491,11 @@ body{
 }
 .contact-us .container .contact-content .icons div i{
     font-size: 30px;
-    text-align: center;
-    transform: translate(22px, 22px);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
 }
 /* end contact us */
 /* start logo */
@@ -537,12 +548,11 @@ hr{
         text-align: center;
     }
     .footer .container .cards .icon {
-        margin: 20px 20%;
+        justify-content: center;
     }
     .footer .container .cards .last input,.footer .container .cards .last i{
         margin-top: 20px;
     }
-
 }
 .footer .container .cards img{
     width: 60%;
@@ -581,14 +591,15 @@ hr{
     padding: 10px 10px;
     color: #322119;
     margin-top: 10px;
+    width: 250px;
 }
 .footer .container .cards .last i{
     font-size: 20px;
     color: #000;
     position: absolute;
     padding: 10px;
-    right: 55px;
     margin-top: 10px;
+    right: 25px;
 }
 .footer .container .cards a i{
     font-size: 20px;
