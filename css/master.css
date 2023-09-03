@@ -154,6 +154,11 @@ body{
     flex-basis: 50%;
     color:white;
 }
+@media (max-width:991px) {
+    .landing .container .container-content {
+        padding-top: 50px;
+    }
+}
 @media (max-width:767px) {
     .landing .container .container-content {
         transform: translateY(70%);
